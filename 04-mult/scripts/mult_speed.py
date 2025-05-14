@@ -68,8 +68,8 @@ N=16
 inputs = []
 expout = []
 for i in range(N):
-    a = randint(-2**31, 2*31-1)
-    b = randint(-2**31, 2*31-1)
+    a = randint(-2**31, 2**31-1)
+    b = randint(-2**31, 2**31-1)
     c = (a * b) & 0xFFFFFFFF
     inputs.append(a)
     inputs.append(b)
